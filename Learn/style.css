@@ -12,21 +12,50 @@
     max-width: 32%;
 }
 .img-block{
-    width: 50px;
+    position: relative;
+    width: 120px;
+    height: 70px;
+    border: 1px solid black;
+    border-width: 1px 0 1px 1px ;
+    background-color:  rgb(212, 212, 212);
+    border-radius: 25px 0 0 25px;
+    z-index: 2;
     
 }
 .img-block img{
     width: 50px;
+    margin: 10px;
+    z-index: 2;
     
+}
+
+.text-block{
+    background-color: rgb(212, 212, 212);
+    border-radius: 0px 10px 10px 10px;
+    border: 1px solid black;
 }
 .text-block p{
     text-align: justify;
     margin: 0;
-    padding: 0 20px;
+    padding: 10px 20px;
+}
+@media (max-width: 3000px){
+    .img-block::before{
+        position: absolute;
+        left: 68px;
+        content: "";
+        display: block;
+        width: 4px;
+        height: 68px;
+        background-color: rgb(212, 212, 212);
+    }
 }
 @media (max-width: 1725px){
     .block{
         max-width: 48%;
+    }
+    .text-block{
+        border-radius: 0px 10px 10px 10px;
     }
 }
     
@@ -39,7 +68,21 @@
         align-items: center;
         max-width: 100%;
     }
-    
+    .text-block{
+        border-radius: 10px;
+    }
+    .img-block{
+        width: 70px;
+        border-radius: 25px 25px 0 0;
+        border-width: 1px 1px 0 1px ;
+    }
+    .img-block::before{
+        background-color: rgb(212, 212, 212);
+        width: 68px;
+        height: 4px;
+        bottom: -2px;
+        left: 0;
+    }
     
 }
 @media (max-width: 700px){
@@ -47,12 +90,34 @@
         margin: 10px 0;
     }
     .img-block{
-        width: 100px;
+        width: 120px;
+        height: 120px;
+        border: 1px solid black;
+        border-width: 1px 1px 0 1px ;
+        background-color:  rgb(212, 212, 212);
+        border-radius: 25px 25px 0 0;
     }
+    .img-block::before{
+        content: "";
+        background-color: rgb(212, 212, 212);
+        width: 118px;
+        height: 4px;
+        display: block;
+        bottom: -2px;
+        left: 0;
+    }
+
     .img-block img{
         width: 100px;
+        margin: 13px 0 0 10px;
+    }
+    .text-block{
+        background-color: rgb(212, 212, 212);
+        border-radius: 10px;
+        border: 1px solid black;
     }
     .text-block p{
-        padding: 0;
+        padding: 10px;
+        
     }
 }
