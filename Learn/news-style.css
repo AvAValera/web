@@ -2,26 +2,93 @@
 
 
 
-
+.page{
+    display: flex;
+}
 .block{
-    position: relative;
-    width: 500px;
-    height: 500px;
+    margin: 20px;
 }
 .block__image{
-    width: 500px;
-    height: 500px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-image: url(img/rails.jpg);
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border-radius: 25%;
     overflow: hidden;
-}
-.block__text{
-    position: absolute;
-    bottom: -70px;
-    color: ivory;
-}
-.block__image:hover{
     
 }
+.block__image img{
+    width: 300px;
+}
+.block__text p{
+    position: absolute;
+    background-color: black;
+    opacity: .7;
+    top: 300px;
+    height: 400px;
+    transition: all 1s;
+    color: blanchedalmond;
+    margin: 0;
+    text-align: center;
+    padding: 50px;
+}
+.block__image:hover .block__text p{
+    top: 0px;
+}
 
+
+
+.block__text2 p{
+    position: absolute;
+    background-color: black;
+    opacity: .7;
+    right: 300px;
+    top: 0;
+    width: 200px;
+    height: 400px;
+    transition:  1s;
+    color: blanchedalmond;
+    margin: 0;
+    text-align: center;
+    padding: 50px;
+}
+.block__image:hover .block__text2 p{
+    right: 0px;
+}
+.block__text3{
+    rotate: 100px;
+}
+
+.block__text3 {
+    position: absolute;
+    background-color: black;
+    opacity: .7;
+    left: 200px;
+    top: 200px;
+    width: 400px;
+    height: 400px;
+    transition: all 1s linear;
+    color: blanchedalmond;
+    margin: 0;
+    text-align: center;
+    padding: 50px;
+    transform: rotateZ(45deg);
+}
+.text{
+    position: absolute;
+    color:  blanchedalmond;
+    width: 200px;
+    height: 200px;
+    top: 250px;
+    right: -250px;
+    text-align: center;
+    transition: all 1s linear;
+    z-index: 2;
+}
+.block__image:hover .block__text3 {
+    transform: translate(-250px, -250px) rotateZ(45deg);
+    
+}
+.block__image:hover .text{
+    top: 35px;
+    right: 40px;
+}
