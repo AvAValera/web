@@ -156,9 +156,7 @@
     background-color: yellow;
     border: 5px solid  yellow;
 }
-.graf{
-    
-}
+
 .graf__container{
     position: relative;
     background-image: url(img/graf.jpg);
@@ -231,4 +229,35 @@
 }
 .graf__container:hover .gl3 .line{
     width: 100px;
+}
+
+.anim{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    
+}
+.anim:hover .anim__block{
+    animation: anim 1s linear infinite ;
+}
+.anim__block{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: darkslateblue;
+    margin: 0 auto;
+}
+
+
+@keyframes anim{
+    0%{
+       top: 600px;
+    }
+    80%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        top: 700px;
+    }
 }
