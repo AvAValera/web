@@ -2,8 +2,9 @@
 
 
 
-.page{
+.row{
     display: flex;
+    
 }
 .block{
     margin: 20px;
@@ -66,7 +67,7 @@
     top: 200px;
     width: 400px;
     height: 400px;
-    transition: all 1s linear;
+    transition: all .5s linear;
     color: blanchedalmond;
     margin: 0;
     text-align: center;
@@ -76,12 +77,13 @@
 .text{
     position: absolute;
     color:  blanchedalmond;
+    opacity: .7;
     width: 200px;
     height: 200px;
     top: 250px;
     right: -250px;
     text-align: center;
-    transition: all 1s linear;
+    transition: all .5s linear;
     z-index: 2;
 }
 .block__image:hover .block__text3 {
@@ -91,4 +93,90 @@
 .block__image:hover .text{
     top: 35px;
     right: 40px;
+}
+
+.button{
+    margin: 50px 0 0 50px;
+    
+}
+.button__text{
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    background-color: royalblue;
+    border-radius: 15px;
+    bottom: 20px;
+    transition: all 1s;
+}
+.button__text p{
+    text-align: center;
+    line-height: 20px;
+    font-size: 40px;
+    font-weight: bolder;
+    color: beige;
+    transition: all 1s;
+}
+.button__shadow{
+    position: relative;
+    width: 200px;
+    height: 100px;
+    background-color: darkslategrey;
+    border-radius: 15px;
+}
+.button__text:hover {
+    bottom: 10px;
+    background-color:aqua ;
+}
+.button__text:hover p{
+    color: black;
+}
+.button__new{
+    position: relative;
+    width: 200px;
+    height: 100px;
+    border-radius: 25px;
+    background-color: blueviolet;
+    border: 5px solid  rgb(180, 100, 255);
+    box-shadow: 10px 10px 20px 1px rgb(148, 148, 148);
+    color: white;
+    font-size: 45px;
+    text-shadow: 0px 5px 4px rgb(48, 48, 48);
+    text-align: center;
+    line-height: 90px;
+    transition: 0.5s linear, background-color 1s linear 1s,
+    border 1s linear .5s;
+    bottom: -30px;
+    left: 50px;
+    text-transform: uppercase;
+}
+.button__new:hover{
+    bottom: -35px;
+    box-shadow: 5px 5px 10px 1px rgb(39, 39, 39);
+    color: rgb(0, 0, 0);
+    background-color: yellow;
+    border: 5px solid  yellow;
+}
+.line{
+}
+.line__body{
+    
+    width: 10px;
+    height: 50px;
+    background-color: red;
+    border-radius: 10px;
+    transition: 2s ease; 
+}
+.line__body2{
+    width: 100px;
+    height: 50px;
+    background-color: springgreen;
+    border-radius: 10px;
+    transition: 1s ease;
+}
+.line__body2:hover{
+    width: 500px;
+    background-color: darkgreen;
+}
+.line__body:hover {
+    width: 700px;
 }
