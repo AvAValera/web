@@ -156,27 +156,79 @@
     background-color: yellow;
     border: 5px solid  yellow;
 }
-.line{
-}
-.line__body{
+.graf{
     
+}
+.graf__container{
+    position: relative;
+    background-image: url(img/graf.jpg);
+    width: 600px;
+    height: 425px;
+    
+}
+.graf__line{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.line{
     width: 10px;
-    height: 50px;
-    background-color: red;
-    border-radius: 10px;
-    transition: 2s ease; 
+    height: 10px;
+    background-color: blue;
+    transition: all 1s ease;
 }
-.line__body2{
+
+.circle{
+    position: relative;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    left: -15px;
+    transition: all 1s ease;
+}
+.circle::before{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 2px solid white;
+    left: 3px;
+    top: 3px;
+}
+.gl1{
+    position: absolute;
+    left: 90px;
+    top: 90px;
+    
+}
+.gl1> .circle, .line{
+    background-color: blueviolet;
+}
+.gl2{
+    position: absolute;
+    left: 90px;
+    top: 150px;
+}
+.gl2 > .circle2, .line2{
+    background-color: chartreuse;
+}
+.gl3{
+    position: absolute;
+    left: 90px;
+    top: 210px;
+}
+.gl3 > .circle3, .line3{
+    background-color: crimson;
+}
+
+.graf__container:hover .gl1 .line{
+    width: 400px;
+}
+.graf__container:hover .gl2 .line{
+    width: 300px;
+}
+.graf__container:hover .gl3 .line{
     width: 100px;
-    height: 50px;
-    background-color: springgreen;
-    border-radius: 10px;
-    transition: 1s ease;
-}
-.line__body2:hover{
-    width: 500px;
-    background-color: darkgreen;
-}
-.line__body:hover {
-    width: 700px;
 }
