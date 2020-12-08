@@ -261,3 +261,52 @@
         top: 700px;
     }
 }
+
+
+.menu{
+    margin: 50px;
+    height: 325px;
+    overflow: hidden;
+    position: relative;
+}
+.menu__button{
+    position: relative;
+    width: 100px;
+    height: 50px;
+    background-color: cadetblue;
+    transition: 1s ease;
+    z-index: 2;
+}
+.menu__button a{
+    position: absolute;
+    text-decoration: none;
+    color: white;
+    left: 35px;
+    top: 15px; 
+}
+.menu__button2{
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    background-color: thistle;
+    top: -230px;
+    transition: .5s linear;
+}
+.menu__conteiner{
+    position: absolute;
+}
+.nav1{
+    margin-top: 60px;
+}
+.nav2{
+    margin-top: 120px;
+}
+.nav3{
+    margin-top: 180px;
+}
+.menu:hover .menu__button2{
+    top: 0;
+}
+.menu:hover .menu__button{
+    background-color: yellowgreen;
+}
