@@ -1,4 +1,6 @@
-
+*{
+    box-sizing: border-box;
+}
 
 
 
@@ -284,6 +286,18 @@
     left: 35px;
     top: 15px; 
 }
+.button__icon{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-top: 10px solid transparent;
+    border-left: 10px solid black ;
+    border-bottom: 10px solid transparent;
+    right: 5px;
+    top: 15px;
+    transition: .5s linear;
+
+}
 .menu__button2{
     position: absolute;
     width: 100px;
@@ -310,3 +324,51 @@
 .menu:hover .menu__button{
     background-color: yellowgreen;
 }
+.menu:hover .button__icon{
+    transform: rotate(90deg);
+    top: 20px;
+}
+
+.menu2{
+    position: relative;
+}
+.menu2__button{
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    background-color: chocolate;
+}
+
+.menu2_container{
+    position: absolute;
+    width: 100px;
+    height: 10px;
+    background-color: coral;
+    top: 0;
+    left: 10px;
+}
+.menu2_container div{
+    color: white;
+    text-align: center;
+    margin: 25px 0;
+}
+.menu2__button:hover .menu2_container{
+    animation: anim_conteiner 0.5s linear forwards;
+}
+@keyframes anim_conteiner{
+    0%{
+        left: 10px;
+    }
+    50%{
+        
+    }
+    80%{
+        left: 100px;
+        height: 10px;
+    }
+    100%{
+        left: 100px;
+        height: 150px;
+    }
+}
+
