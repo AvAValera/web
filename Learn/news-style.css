@@ -282,15 +282,24 @@
     top: 5px;
 }
 .anim:hover .rain{
-    animation: rain 2s infinite ease-out;
+    animation: rain .7s infinite ease-out;
 }
 .anim:hover .rn2{
-    animation: rain 2s infinite ease-out;
+    animation: rn2 .7s infinite .3s ease-out;
 }
-
+.anim:hover .rn3{
+    animation: rn3 .7s infinite  ease-out;
+}
+.anim:hover .rn4{
+    animation: rn4 .7s infinite .3s ease-out;
+}
+.anim:hover .rn5{
+    animation: rn5 .7s infinite  ease-out;
+}
 @keyframes rain{
     0%{
         top: 0;
+        left: 0;
     }
     50%{
 
@@ -299,16 +308,82 @@
         opacity: 1;
     }
     100%{
+        left: 0;
+        opacity: 0;
+        top: 100px; 
+    }
+}
+@keyframes rn2{
+    0%{
+        top: 0px;
+        left: 20px;
+    }
+    50%{
+
+    }
+    80%{
+        opacity: 1;
+    }
+    100%{
+        left: 20px;
+        opacity: 0;
+        top: 100px; 
+    }
+}
+@keyframes rn3{
+    0%{
+        top: 0px;
+        left: 50px;
+    }
+    50%{
+
+    }
+    80%{
+        opacity: 1;
+    }
+    100%{
+        left: 50px;
+        opacity: 0;
+        top: 100px; 
+    }
+}
+@keyframes rn4{
+    0%{
+        top: 0px;
+        left: 80px;
+    }
+    50%{
+
+    }
+    80%{
+        opacity: 1;
+    }
+    100%{
+        left: 80px;
+        opacity: 0;
+        top: 100px; 
+    }
+}
+@keyframes rn5{
+    0%{
+        top: 0px;
+        left: 100px;
+    }
+    50%{
+
+    }
+    80%{
+        opacity: 1;
+    }
+    100%{
+        left: 100px;
         opacity: 0;
         top: 100px; 
     }
 }
 
 
-
-
 .menu{
-    margin: 50px;
     height: 325px;
     overflow: hidden;
     position: relative;
@@ -378,39 +453,39 @@
     position: absolute;
     width: 100px;
     height: 50px;
-    background-color: chocolate;
+    background-color: tomato;
+    text-align: center;
+    line-height: 50px;
+    z-index: 1;
 }
 
-.menu2_container{
+.menu2__button_container{
     position: absolute;
     width: 100px;
-    height: 10px;
-    background-color: coral;
+    height: 50px;
     top: 0;
-    left: 10px;
+    transition: all 1s linear;
+    background-color: tomato;
+    transition: all 1s;
 }
-.menu2_container div{
-    color: white;
-    text-align: center;
-    margin: 25px 0;
+
+.menu2:hover .menu2__button_container{
+    animation: anim-container .5s linear forwards;
+    transition: all 1s linear;
 }
-.menu2__button:hover .menu2_container{
-    animation: anim_conteiner 0.5s linear forwards;
-}
-@keyframes anim_conteiner{
+@keyframes anim-container {
     0%{
-        left: 10px;
-    }
-    50%{
-        
+        left: 0px;
+        height: 5px;
     }
     80%{
-        left: 100px;
-        height: 10px;
+        height: 5px;
     }
     100%{
+        height: 50px;
         left: 100px;
-        height: 150px;
     }
 }
+
+
 
