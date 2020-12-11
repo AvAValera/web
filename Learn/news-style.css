@@ -488,4 +488,30 @@
 }
 
 
+.block_circle{
+    margin-left: 150px;
+    position: relative;
+}
+.circle_grapf{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 30px solid cornflowerblue;
+}
+.circle_grapf2{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    border: 30px  solid rgb(0, 255, 255);
+    border-left:30px solid transparent ;
+    border-color: rgb(0, 255, 255) rgb(0, 255, 255) rgb(0, 255, 255) transparent ;
+    transition: 1s linear;
+}
+.circle_grapf2:hover{
+    transform: rotate(360deg);
+}
+
 
