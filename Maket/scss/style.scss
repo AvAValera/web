@@ -1,0 +1,17 @@
+@import "header";
+@import "top_block";
+
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300;600&display=swap');
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.page{
+    min-width: 1355px;
+    padding: 0 100px;
+    font-family: 'Teko';
+    font-size: 25px;
+}
