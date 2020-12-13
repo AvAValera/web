@@ -1,9 +1,38 @@
+.about_block{
+    margin: 150px 100px;
+}
 .about_us__block_title{
-    margin-top: 100px;
+    margin-bottom: 100px;
     color: black;
     text-align: center ;
 }
 .about_us__sub-title{
-    width: 900px;
+    width: 800px;
+    margin: 0 auto;
+    font-size: 20px;
+}
+.about_block__column{
+    display: flex;
+}
+.column__about_us{
+    position: relative;
+    width: 33.333333333333333333%;
+    margin: 0 20px;
+}
+.column__about_us__img img{
+    width: 50px;
+    display: block;
     margin: 0 auto;
 }
+
+.column__about_us__text{
+    text-align: center;
+    margin: 20px auto;
+}
+.column__about_us__title{
+    font-weight: 600;
+}
+.column__about_us__subtitle{
+    margin: 0 5px;
+    font-size: 20px;
+} 
