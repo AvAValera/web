@@ -310,6 +310,38 @@
   letter-spacing: 5px;
 }
 
+.pricing_plan {
+  background-color: #eeeeee;
+}
+
+.pricing_plan__text {
+  text-align: center;
+  padding: 100px 0;
+}
+
+.pricing_plan__text p {
+  font-size: 20px;
+  margin: 0 auto;
+  width: 800px;
+}
+
+.pricing_plan__column {
+  display: flex;
+  justify-content: center;
+}
+
+.pricing_plan__column__block {
+  background-color: white;
+}
+
+.pricing_plan__column__block__content {
+  text-align: center;
+}
+
+.pricing_plan__column__block__content li {
+  list-style-type: none;
+}
+
 * {
   box-sizing: border-box;
 }
