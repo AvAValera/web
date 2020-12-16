@@ -82,6 +82,7 @@
 }
 .pricing_plan__column__block:hover{
     box-shadow: 0px 0px 20px 10px rgb(165, 165, 165);
+    transform: scale(1.1);
     .pricing_plan__column__block__button a{
         background-color: rgb(1, 139, 121);
         border: 2px solid rgb(1, 139, 121);

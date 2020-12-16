@@ -408,12 +408,56 @@
 
 .pricing_plan__column__block:hover {
   box-shadow: 0px 0px 20px 10px #a5a5a5;
+  transform: scale(1.1);
 }
 
 .pricing_plan__column__block:hover .pricing_plan__column__block__button a {
   background-color: #018b79;
   border: 2px solid #018b79;
   color: white;
+}
+
+.our_team__text {
+  text-align: center;
+  padding: 100px 0;
+}
+
+.our_team__text h3 {
+  margin: 0;
+}
+
+.our_team__text p {
+  font-size: 20px;
+  margin: 0;
+}
+
+.our_team__column {
+  display: flex;
+  justify-content: center;
+}
+
+.our_team__column__block {
+  width: 33.333%;
+}
+
+.our_team__column__photo img {
+  margin: 0 auto;
+  display: block;
+  border-radius: 25px;
+}
+
+.our_team__column__name {
+  padding: 20px 0;
+  text-align: center;
+}
+
+.our_team__column__name h4 {
+  margin: 0;
+}
+
+.our_team__column__name p {
+  margin: 0;
+  font-size: 20px;
 }
 
 * {

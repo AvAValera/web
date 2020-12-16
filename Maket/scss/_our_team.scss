@@ -1,0 +1,36 @@
+.our_team__text{
+    text-align: center;
+    padding: 100px 0;
+    h3{
+        margin: 0;
+    }
+    p{
+        font-size: 20px;
+        margin: 0;
+    }
+}
+.our_team__column{
+    display: flex;
+    justify-content: center;
+}
+.our_team__column__block{
+    width: 33.333%;
+}
+.our_team__column__photo{
+    img{
+        margin: 0 auto;
+        display: block;
+        border-radius: 25px;
+    }
+}
+.our_team__column__name{
+    padding: 20px 0;
+    text-align: center;
+    h4{
+        margin: 0;
+    }
+    p{
+        margin: 0;
+        font-size: 20px;
+    }
+}
