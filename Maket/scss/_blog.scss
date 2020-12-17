@@ -1,6 +1,6 @@
 .blog{
     background-color: rgb(220, 255, 252);
-    padding: 100px;
+    padding: 100px 0;
 }
 .blog__title{
     text-align: center;
@@ -15,17 +15,23 @@
         margin-bottom: 100px;
     }
 }
+.blog__column{
+    margin: 0 100px;
+}
 .blog__column__block{
     display: flex;
+    justify-content: center;
     margin: 0;
     padding: 0;
 }
 .blog__column__block__img img{
-    width: 600px;
+    margin: 0 100px 0 0;
+    width: 85%;
+}
+.blog__column__block__img_second img{
+    margin: 0 0 0 100px;
 }
 .blog__column__block__text{
-    margin-left: 40px;
-    margin-right: 40px;
     text-align: left;
     p{
         font-size: 20px;
