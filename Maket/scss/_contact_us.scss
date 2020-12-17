@@ -1,0 +1,30 @@
+.contact_us{
+    background-image: url(../img/human-computer.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+    color: white;
+}
+.contact_us__title{
+    text-align: center;
+    padding: 100px 0;
+    p{
+        font-size: 20px;
+        margin: 0 400px;
+    }
+}
+.contact_us__icons{
+    display: flex;
+    justify-content: center;
+}
+.contact_us__icons__block{
+    width: 30%;
+    img{
+        display: block;
+        width: 150px;
+        margin: 0 auto;
+    }
+    p{
+        text-align: center;
+    }
+}

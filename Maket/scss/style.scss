@@ -6,6 +6,7 @@
 @import "pricing_plan";
 @import "our_team";
 @import "blog";
+@import "contact_us";
 
 @import url('https://fonts.googleapis.com/css2?family=Teko:wght@300;600&display=swap');
 *{
@@ -16,7 +17,7 @@ body{
     padding: 0;
 }
 .page{
-    min-width: 1355px;
+    min-width: 1448px;
     font-family: 'Teko';
     font-size: 25px;
 }

@@ -534,10 +534,19 @@
   display: block;
 }
 
+.blog__column_img_second {
+  margin: 0 0 0 50px;
+}
+
 .blog__column_text {
   width: 45%;
   font-size: 20px;
   text-align: left;
+}
+
+.blog__column_text h3:hover {
+  color: #018b79;
+  cursor: pointer;
 }
 
 .blog__column_text_date {
@@ -561,6 +570,63 @@
   padding: 0;
 }
 
+.blog__column_text_discription {
+  width: 700px;
+}
+
+.blog__button {
+  margin-top: 100px;
+  text-align: center;
+  text-align: center;
+}
+
+.blog__button a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+  background-color: #018b79;
+  text-align: center;
+  padding: 10px 20px;
+  letter-spacing: 5px;
+}
+
+.contact_us {
+  background-image: url(../img/human-computer.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 700px;
+  color: white;
+}
+
+.contact_us__title {
+  text-align: center;
+  padding: 100px 0;
+}
+
+.contact_us__title p {
+  font-size: 20px;
+  margin: 0 400px;
+}
+
+.contact_us__icons {
+  display: flex;
+  justify-content: center;
+}
+
+.contact_us__icons__block {
+  width: 30%;
+}
+
+.contact_us__icons__block img {
+  display: block;
+  width: 150px;
+  margin: 0 auto;
+}
+
+.contact_us__icons__block p {
+  text-align: center;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -571,7 +637,7 @@ body {
 }
 
 .page {
-  min-width: 1355px;
+  min-width: 1448px;
   font-family: 'Teko';
   font-size: 25px;
 }

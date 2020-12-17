@@ -15,8 +15,7 @@
         margin-bottom: 100px;
     }
 }
-.blog__column{
-}
+
 .blog__column_block{
     display: flex;
     justify-content: center;
@@ -29,10 +28,17 @@
         display: block;
     }
 }
+.blog__column_img_second{
+    margin: 0 0 0 50px;
+}
 .blog__column_text{
     width: 45%;
     font-size: 20px;
     text-align: left;
+    h3:hover{
+        color:  rgb(1, 139, 121);
+        cursor: pointer;
+    }
 }
     
 .blog__column_text_date{
@@ -50,5 +56,22 @@
         line-height: 20px;
         margin: 0;
         padding: 0;
+    }
+}
+.blog__column_text_discription{
+    width: 700px;
+}
+.blog__button{
+    margin-top: 100px;
+    text-align: center;
+    text-align: center;
+    a{
+        text-transform: uppercase;
+        text-decoration: none;
+        color: white;
+        background-color: rgb(1, 139, 121);
+        text-align: center;
+        padding: 10px 20px;
+        letter-spacing: 5px;
     }
 }
