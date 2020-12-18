@@ -2,7 +2,6 @@
     background-image: url(../img/human-computer.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 700px;
     color: white;
 }
 .contact_us__title{
@@ -26,5 +25,59 @@
     }
     p{
         text-align: center;
+    }
+}
+.contact_us__form{
+    width: 100%;
+}
+.contact_us__form__block{
+    display: flex;
+    justify-content: center;
+    input{
+        width: 500px;
+        height: 50px;
+        margin: 20px;
+        border-radius: 10px;
+        font-size: 20px;
+        font-family: 'Teko';
+    }
+    ::placeholder{
+        font-size: 20px;
+        font-family: 'Teko';
+        letter-spacing: 3px;
+        padding-left: 10px;
+    }
+}
+.contact_us__form__textarea{
+    width: 1040px;
+    margin: 0 auto;
+    textarea{
+        border-radius: 10px;
+        width: 100%;
+        font-size: 20px;
+        font-family: 'Teko';
+        resize: none;
+        padding-top: 10px;
+    }
+    ::placeholder{
+        font-size: 20px;
+        font-family: 'Teko';
+        letter-spacing: 3px;
+        padding-top: 10px;
+        padding-left: 10px;
+    }
+}
+.contact_us__form__send-button{
+    
+    input{
+        width: 150px;
+        height: 50px;
+        border-radius: 10px;
+        margin-left: 895px;
+        margin-top: 20px;
+        margin-bottom: 100px;
+        font-size: 20px;
+        font-family: 'Teko';
+        letter-spacing: 3px;
     }
 }
