@@ -1,0 +1,68 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.menu_buttons{
+    position: absolute;
+    width: 200px;
+    top: 0;
+    padding-top: 30px;
+    left: -200px;
+    transition: .5s linear;
+    background-color: salmon;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+}
+.menu_buttons a{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 20px;
+}
+.menu{
+    position: fixed;
+}
+#checking{
+    display: none;
+}
+.lab img{
+    position: relative;
+    width: 50px;
+    margin: 20px;
+    z-index: 2;
+}
+#checking:checked + label ~.menu_buttons {
+    left: 0;
+    transition: .5s linear;
+}
+
+.text{
+    text-align: center;
+    width: 500px;
+    margin: 0 auto;
+}
+@media (min-width: 1000px){
+    .lab{
+        display: none;
+    }
+    .menu{
+        position: static;
+        margin-bottom: 20px;
+    }
+    .menu_buttons{
+        position: static;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        margin: 0 auto;
+        padding-top: 0;
+        transition: none;
+    }
+    .text{
+        width: 80%;
+        text-align: justify;
+    }
+}
