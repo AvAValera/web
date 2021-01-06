@@ -1,0 +1,16 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.grid-container{
+    display: grid;
+    margin: 50px 100px;
+    grid-template-columns: 100px 200px 100px 100px;
+    grid-template-rows: 100px 100px;
+}
+.grid__item{
+    text-align: center;
+    border: 2px dashed black;
+    padding: 30px;
+}
