@@ -27,6 +27,30 @@ console.log(testName.charAt(2));
 console.log(testName.indexOf('ke'));
 console.log(testName.repeat(5));
 
+//function
+function test(funcName){
+    console.log(`Hi ${funcName}`);
+}
+test('Lisa')
+const variables = function(ff){
+    console.log(`Hi ${ff}`);
+    
+}
+variables('Tom')
+const numbers = (a, b) => a + b
+console.log(numbers(6, 10));
+
+const cicle = function(name){
+    return function(lastName){
+        console.log(name + ' ' + lastName);
+        
+    }
+}
+let lastNam = cicle('Din')
+console.log(lastNam('Win'))
+console.log(lastNam('Winer'));
+
+
 
 
 
