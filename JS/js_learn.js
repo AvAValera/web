@@ -130,8 +130,43 @@ let company = 'apple';
 // else{
 //     alert("Who are you?");
 // }
-let count = 100;
-while(count != 0){
-    console.log(count);
-    count--; 
+
+let colorArray = ['red', 'green', 'blue', 'purple', 'orange', 'yellow', 'black'];
+for(let i = 0; i < colorArray.length; i++){
+    if(i == 1 || i == 2){
+        console.log(colorArray[i]);
+        
+    }
+}
+
+for(let j = 1; j <= 10; j++){
+    if(j % 2 == 0){
+        console.log(j);
+    }
+}
+let countK = 0;
+while(countK < 3){
+    console.log(`number ${countK}!`);
+    countK++;
+}
+// let inputK;
+// do{
+//     inputK = prompt('enter num');
+//     if(inputK >=100)break;
+// }while(inputK < 100)
+
+let inputJ = +prompt('enter num');
+
+switch(inputJ){
+    case 0:
+        alert("zero");
+        break;
+    case 1:
+        alert("one");
+        break;
+    case 2:
+    case 3:
+        alert("two or three");
+        break;
+        1
 }
