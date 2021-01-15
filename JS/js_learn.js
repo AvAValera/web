@@ -1,3 +1,4 @@
+'use strict';
 // variable
 var firstName = 'Well';
 const lastName = 'Wells';
@@ -50,13 +51,87 @@ let lastNam = cicle('Din')
 console.log(lastNam('Win'))
 console.log(lastNam('Winer'));
 
+let nam = 'Well';
+console.log(`hello ${nam}`);
 
+let typeString = true;
+console.log(typeof typeString);
+console.log(typeString);
+typeString = String(typeString);
+console.log(typeof typeString);
+console.log(typeString);
 
+let typeNum = '123';
+console.log(typeNum);
+console.log(typeof typeNum);
+typeNum = Number(typeNum);
+console.log(typeNum);
+console.log(typeof typeNum);
 
+// let a = prompt("Первое число?", 1);
+// let b = prompt("Второе число?", 2);
+// alert(+a + +b); // 12 
 
+console.log('A' > 'a');
+let company = 'apple';
+(company == 'aple') ? console.log('Yes') : console.log('No');
 
+// let enterNum = prompt('Enter number');
+// if(enterNum == 0){
+//     alert(0);
+// }
+// else if(enterNum >= 1){
+//     alert(1);
+// }
+// else{
+//     alert(-1);
+// } 
 
+// let enterNum = prompt('Enter number');
+// (enterNum >= 1) ? alert(1) :
+    // (enterNum <= -1 ) ? alert(-1): alert(0); 
 
+// let wordEnter = "Test";
+// let wordEnterTwo = "Test two";
+// let finalWord = "null" || null || wordEnterTwo; 
+// alert(finalWord); 
 
+// let ageDiapasone = prompt("Enter")// in 14 or 90
+// if(ageDiapasone >= 14 && ageDiapasone <= 90){
+//     alert("Diapasone")
+// }else{
+//     alert("Not Diapasone!") 
+// }
 
+// let ageDiapasone = prompt("Enter")// out 14 or 90
+// if(!ageDiapasone <= 13 || !ageDiapasone >= 91){
+//     alert("Diapasone")
+// }else{
+//     alert("Not Diapasone!")  
+// }
 
+// let ageDiapasone = prompt("Enter")// out 14 or 90
+// if(ageDiapasone <= 13 || ageDiapasone >= 91){
+//     alert("Diapasone")
+// }else{
+//     alert("Not Diapasone!")
+// }
+
+// let login = prompt("Enter Login");
+// if(login == "admin"){
+//     let password = prompt("Enter Password");
+//     if(password == "123"){
+//         alert("Wellcome!");
+//     }
+//     else{
+//         alert("Bad pasword!")
+//     }
+// }
+// else{
+//     alert("Who are you?");
+// }
+let count = 100;
+while(count != 0){
+    console.log(count);
+    count--; 
+}
