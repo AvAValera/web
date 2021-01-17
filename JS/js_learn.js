@@ -155,18 +155,35 @@ while(countK < 3){
 //     if(inputK >=100)break;
 // }while(inputK < 100)
 
-let inputJ = +prompt('enter num');
+// let inputJ = +prompt('enter num');
 
-switch(inputJ){
-    case 0:
-        alert("zero");
-        break;
-    case 1:
-        alert("one");
-        break;
-    case 2:
-    case 3:
-        alert("two or three");
-        break;
-        1
+// switch(inputJ){
+//     case 0:
+//         alert("zero");
+//         break;
+//     case 1:
+//         alert("one");
+//         break;
+//     case 2:
+//     case 3:
+//         alert("two or three");
+//         break;
+//         1
+// }
+
+function checkAge(age){
+    (age > 18) ?  true : alert("no way!");
 }
+function min(a, b){
+    (a > b) ? alert(b) : alert(a);
+}
+function pow(x, n){
+    return alert(x**n)
+}
+
+function message(){
+    console.log('Hello user!');
+    
+}
+let showMes = message;
+message();
