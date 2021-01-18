@@ -187,3 +187,57 @@ function message(){
 }
 let showMes = message;
 message();
+
+// let ask =(question, yes, no) => {
+//     if(confirm(question)) yes();
+//     else no();
+// }
+// ask('You are right?', 
+// function(){ alert("yes")},
+// function(){ alert("no")}); 
+
+let user = {
+    name: 'John',
+    surname: 'Smith',
+};
+function cheng(name){
+    user.name = name;
+};
+cheng('Well')
+delete user.name;
+console.log(user);
+
+let salaries = {
+    John: 100,
+    Ann: 160,
+    Pete: 130
+};
+// let arr = [];
+// let num = 0
+// for(let key in salaries){
+//     arr[num] = salaries[key];
+//     num++
+// }
+// let maxSalaries = Math.max.apply(null, arr);
+// for(let key in salaries){
+//     if(salaries[key] == maxSalaries) console.log(key);
+// }
+let menu = {
+    width: 200,
+    height: 300,
+    title: "My menu"
+};
+function multiplyNumeric(menu){
+    for(let key in menu){
+        if(typeof menu[key] == 'number'){
+            menu[key]*=2;
+        }
+    }
+}
+multiplyNumeric(menu);
+console.log(menu);
+
+let synb = Symbol('qq');
+console.log(typeof synb);
+
+
