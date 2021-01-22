@@ -240,4 +240,12 @@ console.log(menu);
 let synb = Symbol('qq');
 console.log(typeof synb);
 
+let peopleArr = ['Bob', 'John', 'Mike'];
+peopleArr.push('Steve');
+console.log(peopleArr);
+delete(peopleArr[1]);
+console.log(peopleArr);
+
+
+
 
