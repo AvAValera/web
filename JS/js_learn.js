@@ -246,6 +246,54 @@ console.log(peopleArr);
 delete(peopleArr[1]);
 console.log(peopleArr);
 
+let arrayNumb = [23, 44, 51, 72, 65, 38];
+
+function checkNum(arr) {
+    if(!Array.isArray(arr)) return null;
+    console.log(arr.length +' '+ arr[0] +' '+ arr[arr.length -1]);
+    
+}
+checkNum(arrayNumb);
+
+function allSum(arr) {
+    let sumArrays = 0;
+    for(let i of arr) {
+        sumArrays += i;
+    }
+    return sumArrays;
+}
+console.log(allSum(arrayNumb));
+
+function getSpecialNumbers(first, last) {
+    let numArr = [];
+    for(first; first <= last; first++) {
+        if(first % 3 === 0) {
+            numArr.push(first);
+        }
+    }
+    return numArr;
+}
+console.log(getSpecialNumbers(2, 50));
 
 
+function swap(arr) {
+    let [a, ...ar] = arr;
+    let arrNum = [];
+    return arrNum = [...ar, a];
+    
+}
+console.log(arrayNumb);
+
+console.log(swap(arrayNumb));
+
+let arrNumbs = [1, -2, 3, 4, -9, 6];
+
+let getMaxSubSum = (first, last, arr) => {
+    let sum = 0;
+    for(arr[first]; arr[first] < arr[last]; first++) {
+        sum += arr[first];
+    }
+    return sum;
+};
+console.log(getMaxSubSum(0,4,arrNumbs));
 
