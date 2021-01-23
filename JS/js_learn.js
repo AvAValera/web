@@ -295,5 +295,20 @@ let getMaxSubSum = (first, last, arr) => {
     }
     return sum;
 };
-console.log(getMaxSubSum(0,4,arrNumbs));
+console.log(getMaxSubSum(0,3,arrNumbs));
 
+let obje = {
+    name: 'Well',
+    age: 34,
+    color: 'green',
+    work: 'network',
+};
+
+let objArr = obj => {
+    obj.forEach(el => {
+        console.log(el);
+        
+    });
+};
+
+objArr(arrNumbs);
