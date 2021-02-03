@@ -1,15 +1,12 @@
-
-
-// objArr(arrNumbs);
-const testArray = ['name', 'Well', 'age', 20, 'hobby', 'draw', 'color', 'green'];
-const anketa = {};
-const chArr = arr =>{
+const peopl = {
+    name: 'Sam',
+    lastName: 'Win',
+    age: 23,
     
-    for(let i = 0; i < arr.length; i++){ // eslint-disable-line no-plusplus
-        if(i % 2 === 0){
-            anketa[arr[i]] = arr[i + 1];
-        }
-    }
 };
-chArr(testArray);
-console.log(anketa);
+peopl.walk = true;
+console.log(peopl);
+delete(peopl.walk);
+console.log(peopl);
+
+

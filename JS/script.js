@@ -36,9 +36,10 @@ function sum(a, b, c){
 }
 sum(1,2,3)
 function arg(){
-  for(i = 0; i < arguments.length; i++){
+  for(let i = 0; i < arguments.length; i++){
     console.log(arguments[i]+100);
   }
 }
 arg();
-$('.qqq').css('color', 'red');
+
+
