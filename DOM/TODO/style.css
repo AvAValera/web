@@ -34,10 +34,11 @@
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
 }
-.elem_paragraph{
+.elem_block p{
     display: inline-block;
     line-height: 0px;
 }
+
 .error {
     margin: 15px 0 0 0;
     padding: 0;
