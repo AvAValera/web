@@ -3,9 +3,29 @@
     margin: 0;
     padding: 0;
 }
-body{
-    background-color: rgb(56, 104, 105);
+.page{
+    width: 100%;
 }
-.qqq{
-    color: aqua;
+.menu{
+    width: 100%;
+    position: relative;
+    background-color:aquamarine;
+    top: 0;
+    margin: 0 auto;
+    text-align: center;
+    transition: 1s linear;
+    -webkit-transition: 1s linear;
+    -moz-transition: 1s linear;
+    -ms-transition: 1s linear;
+    -o-transition: 1s linear;
+}
+.menu_down{
+    width: 400px;
+    top: 400px;
+    background-color: aqua;
+    transition: 1s ease-in-out;
+    -webkit-transition: 1s ease-in-out;
+    -moz-transition: 1s ease-in-out;
+    -ms-transition: 1s ease-in-out;
+    -o-transition: 1s ease-in-out;
 }

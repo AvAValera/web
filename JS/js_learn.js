@@ -1,12 +1,7 @@
-const peopl = {
-    name: 'Sam',
-    lastName: 'Win',
-    age: 23,
+"use strict";
+const menu = document.querySelector('.menu');
+
+menu.addEventListener('click', () => {
     
-};
-peopl.walk = true;
-console.log(peopl);
-delete(peopl.walk);
-console.log(peopl);
-
-
+    
+})
