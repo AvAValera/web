@@ -4,8 +4,7 @@ const elements = document.querySelector('.todo_elements');
         error = document.querySelector('.error');
         inp = document.querySelector('.input');
 
-        const check = document.createElement('input')
-        check.setAttribute('type', 'checkbox');
+        
 
 btnClear.addEventListener('click', () =>{
         elements.innerHTML = '';
@@ -37,16 +36,27 @@ function addElementToList(){
     inp.value = '';
 };
 
-btnEnter.addEventListener('click', () =>{
+btnEnter.addEventListener('click',() =>{
     addElementToList();
 });
 
-inp.addEventListener('keydown',(event) => {
+inp.addEventListener('keydown',(event) =>{
     if(event.keyCode === 13){
         addElementToList();
     };
 });
-
+elements.addEventListener('click',(e) =>{
+    if(e.target.tagName === 'INPUT'){
+        if(e.target.checked){
+            e.target.parentNode.firstChild.style.textDecoration = 'line-through'
+            e.target.parentNode.style.backgroundColor = 'rgb(69 128 130)'
+        }
+        else{
+            e.target.parentNode.firstChild.style.textDecoration = 'none'
+            e.target.parentNode.style.backgroundColor = 'darkorange'
+        }
+    }
+})
 
 
 
