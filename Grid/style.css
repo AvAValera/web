@@ -10,11 +10,29 @@ body{
     display: grid;
     margin: 50px 100px;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 10px;
 }
 .grid__item{
     color: white;
     text-align: center;
     border: 2px dashed rgba(255, 255, 255, 0.349);
     padding: 30px;
+}
+.first{
+    grid-row: 1 / 4;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 5px;
+}
+.inner{
+    background: orange;
+    align-self: center;
+    width: 64px;
+    height: 64px;
+}
+.second{
+    grid-column: 2 / 4;
+    grid-row: 1 / 3;
 }
