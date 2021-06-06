@@ -10,3 +10,9 @@ close.addEventListener('click', () => {
     modal.classList.toggle('hide')
     document.body.style.overflow = '';
 })
+
+setInterval(() => {
+    let win = (window.scrollY * 2) / 5;
+    console.log(win);
+    document.body.style.backgroundColor = `rgb(${win}, ${win}, 255)`;
+},10)
